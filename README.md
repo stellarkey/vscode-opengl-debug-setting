@@ -1,4 +1,4 @@
-# vscode-opengl-debug-setting
+# vscode-opengl-debug-setting (64 bit)
 OpenGL C++ template for VS Code IDE.
 
 This template is based on [https://github.com/vkphillia/opengl-cpp-template](https://github.com/vkphillia/opengl-cpp-template).
