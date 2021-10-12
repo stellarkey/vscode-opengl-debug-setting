@@ -22,7 +22,9 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 
 1.  Clone this repo
 2.  Open this repo as a folder in Visual Studio Code
-3.  In VSCode menu under `Run` option select `run without debugging` (or just `ctrl+alt+b`)
+3.  In VSCode menu
+    1.  under `Terminal` option select `run task`-`Build` (or just `ctrl+shift+b`)
+    2.  under `Run` option select `run without debugging` (or just `ctrl+alt+b`)
 
 ## Minimal setting
 

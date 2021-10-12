@@ -53,9 +53,8 @@
             "command": [
                 "echo Copy resources...",
                 "& mkdir ${workspaceFolder}\\build\\",
-                "& robocopy ${workspaceFolder}\\src\\ ${workspaceFolder}\\build *.glsl *.obj *.h /E",
                 "& copy ${workspaceFolder}\\lib\\*.dll ${workspaceFolder}\\build",
-                "& echo Copy resources complete.",
+                "& copy ${workspaceFolder}\\src\\*.* ${workspaceFolder}\\build"
             ],
             // "dependsOrder": "sequence",
             // "dependsOn": ["Copy DLL", "Copy src files"]
