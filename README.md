@@ -27,10 +27,10 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 
 ## Minimal setting
 
-- set `c_cpp_properties.json`
-  - change `"compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe"` into your own **g++** compiler
 - set `launch.json`
   - change `"miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe"` into  your own **gdb** debugger
+- (optional) set `c_cpp_properties.json`
+  - change `"compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe"` into your own **g++** compiler
 
 ## Prerequisites
 
