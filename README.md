@@ -5,8 +5,7 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 
 ## Integrated OpenGL Libraries List
 
-- GLFW (using lib-mingw-w**64**)
-  - replace it if you use 32 bit compiler!
+- GLFW (32 bit)
 - GLAD
 - GLM
 

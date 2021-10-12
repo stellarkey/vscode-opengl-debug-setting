@@ -10,15 +10,15 @@
             
             "preLaunchTask": "Build",          // 前置任务。可以调用${defaultBuildTask}
 
-            "program": "${workspaceFolder}/src/myprogram.exe",   // 可执行文件
+            "program": "${workspaceFolder}/lib/myprogram.exe",   // 可执行文件，在动态库目录中
             "args": [],                                          // 参数
             "environment": [],                                   // 运行时环境变量设置
-            "cwd": "${workspaceFolder}/src/",                    // 工作目录
+            "cwd": "${workspaceFolder}/lib/",                    // 工作目录
             "stopAtEntry": false,                                // 设置断点在launch完成时
             "externalConsole": false,                            // 设置启用外部控制台
 
             
-            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",  // 设置调试器
+            "miDebuggerPath": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gdb.exe",  // 设置调试器
             "MIMode": "gdb",                                        // 设置调试器模式
             "setupCommands": [                                      // 调试器设置
                 {
