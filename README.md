@@ -26,6 +26,10 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
     1.  under `Terminal` option select `run task`-`Build` (or just `ctrl+shift+b`)
     2.  under `Run` option select `run without debugging` (or just `ctrl+alt+b`)
 
+### Demo
+
+![Demo](demo.png)
+
 ## Minimal setting
 
 - set `launch.json`
