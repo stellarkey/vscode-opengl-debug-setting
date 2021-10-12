@@ -13,7 +13,7 @@
                 
                 // "${file}",      // 编译VSCode窗口内的当前文件名
                 "*.cpp",       // 编译src中的所有C++源代码
-                "glad.c",
+                "${workspaceFolder}/include/glad.c",
 
                 "-I${workspaceFolder}/include",     // 自定义头文件目录
 
