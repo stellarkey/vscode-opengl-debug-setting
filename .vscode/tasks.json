@@ -17,18 +17,18 @@
 
                 "-I${workspaceFolder}/include",     // 自定义头文件目录
 
-                // // 动态链接
-                // "-L./lib",         // 自定义库文件目录
-                // "-lglfw3dll",      // --> 指定使用 GLFW 界面库
+                // 动态链接
+                "-L${workspaceFolder}/lib",         // 自定义库文件目录
+                "-lglfw3dll",      // --> 指定使用 GLFW 界面库
 
                 // 静态链接
-                "-L${workspaceFolder}/lib-static",
-                "-lglfw3",
-                "-lgdi32",
-                "-static",      // 强制静态链接
+                // "-L${workspaceFolder}/lib-static",
+                // "-lglfw3",
+                // "-lgdi32",
+                // "-static",      // 强制静态链接
 
-                "-o",              // 指定生成目标名：
-                "myprogram.exe",   // --> 当前文件名（去掉扩展名）
+                "-o",              // 指定生成目标名
+                "${workspaceFolder}/lib/myprogram.exe", 
             ],
             "group": {          // 任务分组
                 "kind": "build",    // 任务分组标签
