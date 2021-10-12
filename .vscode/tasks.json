@@ -1,31 +1,51 @@
+// tasks.json
 {
+    // https://code.visualstudio.com/docs/editor/tasks
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
-            "label": "C/C++: g++.exe build active file",
-            "command": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\g++.exe",
-            "args": [
-                "-g",
-                "-std=c++17",
-                "-I./include",
-                "-L./lib",
-                "src/\\*.cpp",
-                "src/glad.c",
-                "-lglfw3dll",
-                "-o",
-                "${workspaceFolder}/myprogram.exe"
+            "label": "Build",  // 任务名。launch.json中会调用这个名字
+            "type": "shell",   // 任务类型。shell:在命令行中执行，或process:作为进程执行。
+            "command": "g++",  // 要执行的指令。
+            "args": [          // 指令的参数列表。参数可以写在这里，也可以直接写到command里。
+                "-ggdb",        // 产生调试信息
+                "-Wall",        // 产生警告信息
+                
+                // "${file}",      // 编译VSCode窗口内的当前文件名
+                "*.cpp",       // 编译src中的所有C++源代码
+                "*.c",
+
+                "-I${workspaceFolder}/include",     // 自定义头文件目录
+
+                // // 动态链接
+                // "-L./lib",         // 自定义库文件目录
+                // "-lglfw3dll",      // --> 指定使用 GLFW 界面库
+
+                // 静态链接
+                "-L${workspaceFolder}/lib-static",
+                "-lglfw3",
+                "-lgdi32",
+                "-static",      // 强制静态链接
+
+                "-o",              // 指定生成目标名：
+                "myprogram.exe",   // --> 当前文件名（去掉扩展名）
             ],
-            "options": {
-                "cwd": "${workspaceFolder}"
+            "group": {          // 任务分组
+                "kind": "build",    // 任务分组标签
+                "isDefault": true   // 默认执行组，按Ctrl+Shift+B立即执行
+            },
+            "options": {       // 其他命令选项
+                "cwd": "${workspaceFolder}/src"   // 工作路径。执行指令的位置
             },
             "problemMatcher": [
-                "$gcc"
+                "$gcc" // 使用gcc捕获错误
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "presentation": {   // 输出界面形式
+                "reveal": "always", // 总是显示
+                "panel": "shared"      // 新建1个终端显示结果。可改为共享:shared
+            },
+            "dependsOrder": "sequence",     // 按顺序执行前置任务
+            "dependsOn": []   // 前置任务
         }
     ]
 }
