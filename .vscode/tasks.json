@@ -53,7 +53,8 @@
             "command": [
                 "echo Copy resources...",
                 "& mkdir ${workspaceFolder}\\build\\",
-                "& robocopy ${workspaceFolder}\\src\\ ${workspaceFolder}\\build *.glsl *.obj *.h /E",
+                "& robocopy ${workspaceFolder}\\src\\ ${workspaceFolder}\\build *.* /E",
+                // "& robocopy ${workspaceFolder}\\src\\ ${workspaceFolder}\\build *.glsl *.obj *.h *.png *.jpg /E",
                 "& copy ${workspaceFolder}\\lib\\*.dll ${workspaceFolder}\\build",
                 "& echo Copy resources complete.",
             ],
