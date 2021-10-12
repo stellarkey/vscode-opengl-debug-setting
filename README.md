@@ -5,9 +5,19 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 
 ## Integrated OpenGL Libraries List
 
-- GLFW
+- GLFW (using lib-mingw-w**64**)
+  - replace it if you use 32 bit compiler!
 - GLAD
 - GLM
+
+### Folder Structure
+
+
+|                                           | `include/`       | `lib/`                       | `lib-static/` | `src/`   |
+| ----------------------------------------- | ---------------- | ---------------------------- | ------------- | -------- |
+| [GLFW](http://www.glfw.org/download.html) | `GLFW/*`         | `glfw3.dll`, `libglfw3dll.a` | `libglfw3.a`  |          |
+| [GLAD](https://glad.dav1d.de/)            | `glad/*`,`KHR/*` |                              |               | `glad.c` |
+| [GLM](https://github.com/g-truc/glm)      | `glm/*`          |                              |               |          |
 
 ## How to run this project
 
@@ -24,6 +34,5 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 
 ## Prerequisites
 
-- VS Code
-  - VS Code C/C++ extension
-- MinGW
+- VS Code (with VS Code C/C++ extension)
+- MinGW (with environment variables)
