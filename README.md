@@ -12,11 +12,11 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 ### Folder Structure
 
 
-|                                           | `include/`       | `lib/`                       | `lib-static/` | `src/`   |
-| ----------------------------------------- | ---------------- | ---------------------------- | ------------- | -------- |
-| [GLFW](http://www.glfw.org/download.html) | `GLFW/*`         | `glfw3.dll`, `libglfw3dll.a` | `libglfw3.a`  |          |
-| [GLAD](https://glad.dav1d.de/)            | `glad/*`,`KHR/*` |                              |               | `glad.c` |
-| [GLM](https://github.com/g-truc/glm)      | `glm/*`          |                              |               |          |
+|                                           | `include/`                 | `lib/`                       | `lib-static/` | `src/` |
+| ----------------------------------------- | -------------------------- | ---------------------------- | ------------- | ------ |
+| [GLFW](http://www.glfw.org/download.html) | `GLFW/*`                   | `glfw3.dll`, `libglfw3dll.a` | `libglfw3.a`  |        |
+| [GLAD](https://glad.dav1d.de/)            | `glad/*`,`KHR/*`, `glad.c` |                              |               |        |
+| [GLM](https://github.com/g-truc/glm)      | `glm/*`                    |                              |               |        |
 
 ## How to run this project
 
