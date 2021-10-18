@@ -17,7 +17,7 @@
             "externalConsole": false,                              // 设置启用外部控制台
 
             
-            "miDebuggerPath": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gdb.exe",  // 设置调试器
+            // "miDebuggerPath": "C:\\Program Files (x86)\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw32\\bin\\gdb.exe",  // 设置调试器
             "MIMode": "gdb",                                        // 设置调试器模式
             "setupCommands": [                                      // 调试器设置
                 {

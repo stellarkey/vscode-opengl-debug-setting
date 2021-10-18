@@ -3,6 +3,19 @@ OpenGL C++ template for VS Code IDE.
 
 This template is based on [https://github.com/vkphillia/opengl-cpp-template](https://github.com/vkphillia/opengl-cpp-template).
 
+## Prerequisites
+
+- VS Code (with VS Code C/C++ extension)
+- MinGW (32 bit, with **environment variables**)
+
+## How to run this project
+
+1.  Clone this repo
+2.  Open this repo as a folder in Visual Studio Code
+3.  In VSCode menu
+    1.  under `Terminal` option select `run task`-`Build` (or just **`ctrl+shift+b`**)
+    2.  under `Run` option select `run without debugging` (or just **`ctrl+alt+b`**)
+
 ## Integrated OpenGL Libraries List
 
 - GLFW (32 bit)
@@ -18,26 +31,11 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 | [GLAD](https://glad.dav1d.de/)            | `glad/*`,`KHR/*`, `glad.c` |                              |               |        |
 | [GLM](https://github.com/g-truc/glm)      | `glm/*`                    |                              |               |        |
 
-## How to run this project
+### How to add your own Libraries
 
-1.  Clone this repo
-2.  Open this repo as a folder in Visual Studio Code
-3.  In VSCode menu
-    1.  under `Terminal` option select `run task`-`Build` (or just `ctrl+shift+b`)
-    2.  under `Run` option select `run without debugging` (or just `ctrl+alt+b`)
+- if you have any **header files**, add them to `include/`
+- libraries
+  - if you have any **dynamic libraries**, add them to `lib/`
+  - if you have any **static libraries**, add them to `lib-static/`
+  - add `-lyour_library`  into `args` list within `tasks.json`
 
-### Demo
-
-![Demo](demo.png)
-
-## Minimal setting
-
-- set `launch.json`
-  - change `"miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe"` into  your own **gdb** debugger
-- (optional) set `c_cpp_properties.json`
-  - change `"compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe"` into your own **g++** compiler
-
-## Prerequisites
-
-- VS Code (with VS Code C/C++ extension)
-- MinGW (with environment variables)
