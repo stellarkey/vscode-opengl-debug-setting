@@ -37,5 +37,5 @@ This template is based on [https://github.com/vkphillia/opengl-cpp-template](htt
 - libraries
   - if you have any **dynamic libraries**, add them to `lib/`
   - if you have any **static libraries**, add them to `lib-static/`
-  - add `-lyour_library`  into `args` list within `tasks.json`
+  - add `-lyour_library`  into `args` list within `.vscode/tasks.json`
 
